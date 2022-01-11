@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>forms</title>
+</head>
+<body>
+    <div class="screen">
+        <div class="leftside">
+            <img src="images/black-mountains-minimalist-5lab1dk0n122me23.jpg" alt="">
+        </div>
+        <div class="rightside">
+            <h1>Crie uma conta</h1>
+            <form method="post" class="validator">
+                <label for="">
+                    Name: <br/>
+                    <input type="text" name="name" data-rules="required|min=3" />
+                </label>
+                    <label for="">
+                    Email: <br/>
+                    <input type="text" name="email" data-rules="required|email" />
+                </label>
+                <label for="">
+                    Password: <br/>
+                    <input type="password" name="password" data-rules="required|min=4" />
+                </label>
+                <label for="">
+                    <input type="submit" value="Register"/>
+                </label>
+        </form>
+
+        <div class="">
+            Already have an account?<a href="">Log in</a>
+        </div>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600;700&family=Roboto+Mono:wght@300;600;700&display=swap');
+*{
+    box-sizing: border-box; 
+}
+
+html, body{
+    margin:0;
+    height: 100%;
+}
+
+
+.main{
+    background: url("images/hd-high-rise-buildings-cityscape-h1xqu3ij5aw0m3mr.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+   
+}
+
+.main-2{
+    display: flex;
+    flex-direction: column;
+    padding: 5% 15%;
+    height: 100%;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+  
+}
+
+
+.textos{  
+    color:#eee;
+    text-shadow: 1px 0px 6px #222;
+   
+}
+
+
+/* Frase */
+.frase{
+    font-family:'Roboto mono', sans-serif; 
+    width: 50%;
+
+}
+
+.frase-autor{
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+
+/* Relógio */
+
+.relogio{
+    font-family: 'Bebas Neue';    
+    font-size: 2.5em;
+    text-align: left;
+    justify-content: space-between;
+    display: flex;
+
+    
+} 
+
+.mostrar-relogio{
+    font-size: 5.5em;
+    color: #eee;
+    text-shadow: 1px 0px 6px #222;
+    display: flex;
+}
+
+.sun{
+    width: 30px;
+    margin-right: 7px;
+}
+
+.relogio-esquerda{
+
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* Botao More */
+.more{
+    color: #eee;
+    display: flex;
+    
+}
+
+.relogio-direita{
+    display: flex;
+    align-items: flex-end;
+    justify-content:flex-end;
+
+
+}
+
+.btn-more{
+    cursor: pointer;
+    font-family:'Roboto mono', sans-serif;
+    font-weight: bold;
+    color: #444;
+    width: 180px;
+    height: 60px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 35px;
+    border: 1px solid #444;
+}
+
+/* media */
+
+@media (max-width: 768px){
+    .frase{
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+        width: 90%;
+    }
+
+
+    .relogio{ 
+        font-size: 2em;
+    } 
+    
+    .mostrar-relogio{
+        font-size: 3em;
+    }
+
+    .sun{
+        width: 20px;
+        margin-right: 5px;
+    }
+
+    .btn-more{ 
+        width: 70px;
+        height: 30px;
+        border-radius: 25px;
+        text-align: center;
+        font-size: 17px;
+    }
+    
+}
+
+@media (max-width: 300px){
+    .frase{
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
+        width: 90%;
+    }
+
+
+    .relogio{ 
+        font-size: 1.5em;
+    } 
+    
+    .mostrar-relogio{
+        font-size: 2.5em;
+    }
+
+    .btn-more{ 
+        width: 50px;
+        height: 25px;
+        border-radius: 25px;
+        text-align: center;
+        font-size: 14px;
+    }
+
+
+}
